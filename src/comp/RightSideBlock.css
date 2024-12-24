@@ -1,0 +1,38 @@
+/* ===== Sidebar (Right Side) ===== */
+.right-side-block {
+  width: 250px;
+  background-color: var(--jf-bg-two);
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 212;
+  overflow-y: auto;
+  transition: var(--jf-transition);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.right-side-block.sidebar-collapsed {
+  width: 60px;
+}
+
+.right-side-block ul li a {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background-color var(--jf-transition);
+}
+
+.right-side-block ul li a:hover {
+  background-color: var(--jf-white-hover);
+}
+
+.right-side-block.sidebar-collapsed ul li a span.ic,
+.right-side-block.sidebar-collapsed .profile__name {
+  display: none;
+}
+/* ================ */
